@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.babiloneo.puntodeventa">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".dataBase.dbAplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -17,7 +20,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".RegistroActivity"></activity>
+        <activity android:name=".RegistroActivity" />
+        <activity android:name=".VentasActivity" />
+        <activity android:name=".ProductosActivity" />
+        <activity android:name=".AltasActivity" />
+        <activity android:name=".ConsultarActivity" />
+        <activity android:name=".BajasActivity" />
+        <activity android:name=".ModificActivity"></activity>
     </application>
 
 </manifest>

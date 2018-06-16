@@ -7,8 +7,7 @@
     android:orientation="vertical"
     android:weightSum="1"
     android:padding="20dp"
-    tools:context=".MainActivity">
-
+    tools:context=".ProductosActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -16,52 +15,42 @@
         android:orientation="vertical"
         android:weightSum="10">
 
-        <TextView
-            android:id="@+id/main_user"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="Usurio:ByIris"
-            android:textColor="#000"
-            android:textAlignment="center"
-            android:textSize="32sp"/>
 
         <Button
-            android:id="@+id/ventas"
+            android:id="@+id/btn_altas"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:text="Ventas"
+            android:text="Altas"
             android:textSize="32sp"/>
 
 
 
         <Button
-            android:id="@+id/productos"
+            android:id="@+id/btn_consultar"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:text="Productos"
+            android:text="Consultar"
             android:layout_marginTop="20dp"
             android:textSize="32sp"/>
 
         <Button
-            android:id="@+id/registro"
+            android:id="@+id/btn_bajas"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:text="Registro"
+            android:text="Bajas"
             android:layout_marginTop="20dp"
             android:textSize="32sp"/>
 
         <Button
-            android:id="@+id/cerrar_secion"
+            android:id="@+id/btn_modificar"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:text="Cerrar secion"
+            android:text="Modificar"
             android:layout_marginTop="20dp"
             android:textSize="28sp"/>
     </LinearLayout>
-
 </LinearLayout>
