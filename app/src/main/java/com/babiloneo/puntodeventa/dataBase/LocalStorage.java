@@ -14,7 +14,8 @@ import java.util.Arrays;
 public class LocalStorage {
 
     private static final String PREFS_NAME = "ALUMNOSDB";
-
+    public static int cantidad;
+    public static double total;
     public void setUser(usuario user, Context context) {
 
         boolean estado=false;

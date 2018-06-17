@@ -113,4 +113,30 @@ public class service {
         realm.copyToRealm(p); //instrucción para asegurar inserción
         realm.commitTransaction();
     }
+
+    public void newVenta(int cantidad, double total,String usuario) {
+
+        realm.beginTransaction();//Iniciar transaccion en mi db
+
+        Number currentIdNum = realm.where(Ventas.class).max("id");
+        int nextId;
+        if(currentIdNum == null) {
+            nextId = 1;
+        } else {
+            nextId = currentIdNum.intValue() + 1;
+        }
+
+        Ventas nuevo=realm.createObject(Ventas.class);
+        nuevo.setId(nextId);
+        nuevo.setCantidad(cantidad);
+        nuevo.setTotal(total);
+        nuevo.setUsuario(usuario);
+
+        realm.commitTransaction(); //Terminar transaccion en mi db
+    }
+
+    public List<Ventas> obtenerVentas(){
+        RealmResults<Ventas> r=realm.where(Ventas.class).findAll();
+        return r;
+    }
 }

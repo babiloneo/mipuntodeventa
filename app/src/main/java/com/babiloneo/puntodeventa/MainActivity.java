@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         miuser=(TextView)findViewById(R.id.main_user);
         usuario user =storage.consultar(getApplicationContext());
         miuser.setText(user.getUsuario());
+        ventas=(Button)findViewById(R.id.ventas);
         productos=(Button)findViewById(R.id.productos);
         cerrar=(Button)findViewById(R.id.cerrar_secion);
         funciones();
@@ -61,10 +62,19 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.finish();
             }
         });
+        //boton ir ventana productos
         productos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,ProductosActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ventas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,VentasActivity.class);
                 startActivity(intent);
             }
         });

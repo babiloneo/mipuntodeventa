@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context=".VentasActivity">
-
+    tools:context=".HistorialActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -34,7 +33,7 @@
             android:fontFamily="roboto"
             android:gravity="center"
             android:lines="1"
-            android:text="Nombre"
+            android:text="Usuario"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -45,7 +44,7 @@
             android:fontFamily="roboto"
             android:gravity="center"
             android:lines="1"
-            android:text="Precio $"
+            android:text="#N productos"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -56,7 +55,7 @@
             android:fontFamily="roboto"
             android:gravity="center"
             android:lines="1"
-            android:text="Compra"
+            android:text="Total"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -64,35 +63,10 @@
     </LinearLayout>
 
     <ListView
-        android:id="@+id/listview_ventas"
+        android:id="@+id/listview_historial"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5">
+        android:layout_weight="9">
 
     </ListView>
-
-    <Button
-        android:id="@+id/btn_pagar"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.5"
-        android:textSize="24sp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textColor="#000"
-        android:layout_marginTop="10dp"
-        android:text="PAGAR"/>
-
-    <Button
-        android:id="@+id/btn_hitorial"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.5"
-        android:textSize="24sp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textColor="#000"
-        android:layout_marginTop="10dp"
-        android:text="Historial"/>
-
 </LinearLayout>

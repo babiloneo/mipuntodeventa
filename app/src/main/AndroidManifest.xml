@@ -26,7 +26,8 @@
         <activity android:name=".AltasActivity" />
         <activity android:name=".ConsultarActivity" />
         <activity android:name=".BajasActivity" />
-        <activity android:name=".ModificActivity"></activity>
+        <activity android:name=".ModificActivity" />
+        <activity android:name=".HistorialActivity"></activity>
     </application>
 
 </manifest>
